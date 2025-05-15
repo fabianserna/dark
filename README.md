@@ -59,9 +59,6 @@ puedes crear una carpeta propia donde tengas tus bat o ejecutables a los que qui
 3. pega los archivos que se encuentran en script tanto el dark.bat como el dark.ps1
 4. ejecuta desde win + r o ejecutar "dark"
 
-```powershell
-Install-Module ToggleDarkMode -Scope CurrentUser
-```
 
 </details>
 
