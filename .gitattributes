@@ -1,0 +1,6 @@
+# Normalizar TODO a LF (recomendado para código)
+* text=auto eol=lf
+
+# Pero scripts batch / PowerShell felices con CRLF
+*.bat   text eol=crlf
+*.ps1   text eol=crlf
