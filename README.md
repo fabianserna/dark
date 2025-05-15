@@ -1,6 +1,6 @@
 # dark
 One-click Windows dark/light switch⚡️PowerShell script for Win 10/11
-![License](https://img.shields.io/badge/license-MIT-blue) ![license-fabidev](docs/fabidevlicense.svg)
+![License](https://img.shields.io/badge/license-MIT-blue) ![license-fabidev](docs/images/fabidevlicense.svg)
 
 ## Features
 
@@ -12,7 +12,7 @@ One-click Windows dark/light switch⚡️PowerShell script for Win 10/11
 
 ## Demo
 
-![dark-demo](docs/demo.gif)
+![dark-demo](docs/images/demo.gif)
 
 ## Getting Started
 
