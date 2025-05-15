@@ -58,8 +58,6 @@ puedes crear una carpeta propia donde tengas tus bat o ejecutables a los que qui
 2. Ingresala en el path de tu pc, aqui no te lo explico porque es muy facil.
 3. pega los archivos que se encuentran en script tanto el dark.bat como el dark.ps1
 4. ejecuta desde win + r o ejecutar "dark"
-
-
 </details>
 
 ### Usage
@@ -91,13 +89,7 @@ A value of `0` = dark, `1` = light. The change is pushed to the shell with `user
 
 ## Uninstallation
 
-If you installed via winget:
-
-```powershell
-winget uninstall FabiDev.ToggleDarkMode
-```
-
-If you cloned manually, simply delete the folder.
+simply delete the folder c:/utl/.
 
 ## Roadmap
 
