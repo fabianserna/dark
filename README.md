@@ -1,6 +1,6 @@
 # dark
 One-click Windows dark/light switch⚡️PowerShell script for Win 10/11
-![License](https://img.shields.io/badge/license-MIT-blue) ![CI](https://github.com/your-username/ToggleDarkMode/actions/workflows/ci.yml/badge.svg)
+![License](https://img.shields.io/badge/license-MIT-blue) ![license-fabidev](docs/fabidevlicense.svg)
 
 ## Features
 
@@ -8,12 +8,11 @@ One-click Windows dark/light switch⚡️PowerShell script for Win 10/11
 * Supports **Windows 11** and **Windows 10 (21H2+)**.
 * No admin rights required (modifies only HKCU registry hive).
 * Works with batch wrappers, scheduled tasks, or as a **PowerShell module**.
-* Adjustable **verbosity** (`error`, `trace`, `debug`).
 * Returns structured objects so you can pipe the result to other cmdlets.
 
 ## Demo
 
-![toggle-demo](docs/toggle-demo.gif)
+![dark-demo](docs/demo.gif)
 
 ## Getting Started
 
@@ -24,39 +23,25 @@ One-click Windows dark/light switch⚡️PowerShell script for Win 10/11
 
 ### Installation
 
+</details>
+
 <details>
-<summary>Winget (recommended)</summary>
+<summary>PowerShell Command</summary>
 
 ```powershell
-winget install --id FabiDev.ToggleDarkMode
+git clone https://github.com/fabianserna/dark.git
+cd script
+mkdir C:\utl\
+[Environment]::SetEnvironmentVariable('Path', "$env:Path;C:\utl", 'User')
+Get-ItemProperty -Path HKCU:\Environment -Name Path
+Copy-Item -Path "dark.bat" -Destination "C:\utl\"
+Copy-Item -Path "dark.ps1" -Destination "C:\utl\"
 ```
 
 </details>
 
 <details>
 <summary>Manual clone</summary>
-
-```powershell
-git clone https://github.com/your-username/ToggleDarkMode.git
-cd ToggleDarkMode
-```
-
-</details>
-
-<details>
-<summary>PowerShell Gallery (as module)</summary>
-
-```powershell
-Install-Module ToggleDarkMode -Scope CurrentUser
-```
-
-</details>
-
-### Usage
-
-```powershell
-# Toggle both system and app themes automatically
-dark.ps1
 
 English 
 You can create a separate folder where you can store your bat files or executables that you want to access quickly. In my case, do the following:
@@ -73,6 +58,19 @@ puedes crear una carpeta propia donde tengas tus bat o ejecutables a los que qui
 2. Ingresala en el path de tu pc, aqui no te lo explico porque es muy facil.
 3. pega los archivos que se encuentran en script tanto el dark.bat como el dark.ps1
 4. ejecuta desde win + r o ejecutar "dark"
+
+```powershell
+Install-Module ToggleDarkMode -Scope CurrentUser
+```
+
+</details>
+
+### Usage
+
+```powershell
+# Toggle both system and app themes automatically
+dark.bat
+```
 
 
 
